@@ -11,7 +11,10 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    @import url("https://use.typekit.net/mpq5cwm.css");
+    </style>
 </head>
 
 <body>
@@ -19,7 +22,18 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
-    <p>Hello world! This is HTML5 Boilerplate.</p>
+    <div class="navigation">
+        <div class="logo">logo</div>
+        <div class="menu">
+            <a href="#" id="link-work">work </a>
+            <a href="#" id="link-profile">profile </a>
+        </div>
+    </div>
+    <div class="about-row text-large">
+        <div class="about-col">
+            <p>Your kit must be published any time you make a change, such as adding new fonts or updating the domain listing. You may also need to republish a kit to access new features, such as updated browser support. Publishing your kit is a good first step in resolving font loading problems. </p>
+        </div>
+    </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/TweenMax.js"></script>
     <script src="js/ScrollMagic.js"></script>
@@ -28,6 +42,9 @@
     <script src="js/Draggable.js"></script>
     <script src="js/slick.js"></script>
     <!-- <script src="js/main.js"></script> -->
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
 </body>
 
 </html>
