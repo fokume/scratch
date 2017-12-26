@@ -108,8 +108,8 @@ body {
 /* line 101, ../sass/main.scss */
 .menu ul li {
   color: black;
-  font-size: 10vw;
-  padding: 40px 0;
+  font-size: 8vw;
+  padding-top: 30px;
 }
 @media (min-width: 900px) {
   /* line 101, ../sass/main.scss */
