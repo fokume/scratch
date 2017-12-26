@@ -1,7 +1,7 @@
 /* line 1, ../sass/main.scss */
 html,
 body {
-  font-family: relative, times;
+  font-family: "chalet-london-sixty", sans-serif;
   font-size: 18px;
   line-height: 1.5em;
   background-color: white;
@@ -10,47 +10,219 @@ body {
 }
 
 /* line 11, ../sass/main.scss */
+.menu-item {
+  font-size: 1em;
+  text-decoration: none;
+  font-family: "chalet-london-sixty", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-color: black;
+}
+
+/* line 20, ../sass/main.scss */
+.menu-item:hover {
+  border-bottom: 1px solid #000;
+  color: black;
+}
+
+/* line 25, ../sass/main.scss */
+.menu-item:visited {
+  color: black;
+}
+
+/* line 30, ../sass/main.scss */
+.nav-line {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+/* line 39, ../sass/main.scss */
 .navigation {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   justify-content: space-between;
   padding: 30px 30px 0 30px;
-  z-index: 1000;
 }
 
-/* line 19, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .logo {
   align-content: flex-end;
 }
 
-/* line 23, ../sass/main.scss */
-.menu {
+/* line 51, ../sass/main.scss */
+.nav-items {
   display: flex;
   align-content: flex-start;
   flex-direction: row;
   text-align: right;
 }
 
-/* line 30, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
+.background {
+  background: #D6825A;
+  height: 100%;
+  position: relative;
+}
+/* line 64, ../sass/main.scss */
+.background .trigger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  right: auto;
+  bottom: auto;
+  left: 30px;
+  z-index: 3;
+  cursor: pointer;
+  transition: top .1s ease-in-out;
+}
+
+/* line 80, ../sass/main.scss */
+.menu {
+  background: white;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 999;
+}
+/* line 91, ../sass/main.scss */
+.menu ul {
+  list-style-type: none;
+  width: 800px;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  right: auto;
+  bottom: auto;
+  left: 10%;
+}
+/* line 101, ../sass/main.scss */
+.menu ul li {
+  color: black;
+  font-size: 10vw;
+  padding: 40px 0;
+}
+@media (min-width: 900px) {
+  /* line 101, ../sass/main.scss */
+  .menu ul li {
+    color: black;
+    font-size: 6vw;
+    padding: 40px 0;
+  }
+}
+
+/* line 114, ../sass/main.scss */
+.menu a:hover {
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+
+/* line 120, ../sass/main.scss */
 .about-row {
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-/* line 36, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .about-col {
   max-width: 100vw;
   padding: 20px;
 }
 @media (min-width: 900px) {
-  /* line 36, ../sass/main.scss */
+  /* line 127, ../sass/main.scss */
   .about-col {
     max-width: 60vw;
   }
 }
 
-/* line 45, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
+.header {
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  height: 100px;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-color: black;
+}
+
+/* line 147, ../sass/main.scss */
+.header p {
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 5vw;
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+/* line 155, ../sass/main.scss */
+.word {
+  position: absolute;
+  display: inline-block;
+  width: 400px;
+  height: 60px;
+  overflow: hidden;
+}
+
+/* line 163, ../sass/main.scss */
+ul {
+  list-style: none;
+  position: absolute;
+}
+
+/* line 168, ../sass/main.scss */
+ul li {
+  font-size: 5vw;
+}
+
+/* line 172, ../sass/main.scss */
+.content .box {
+  width: 100%;
+  height: 700px;
+}
+
+/* line 177, ../sass/main.scss */
+.box1 {
+  border: 1px solid;
+}
+
+/* line 181, ../sass/main.scss */
+.box2 {
+  border: 1px solid;
+}
+
+/* line 185, ../sass/main.scss */
+.box3 {
+  border: 1px solid;
+}
+
+/* line 189, ../sass/main.scss */
+.box4 {
+  border: 1px solid;
+}
+
+/* line 193, ../sass/main.scss */
+.box5 {
+  border: 1px solid;
+}
+
+/* line 197, ../sass/main.scss */
+.box6 {
+  border: 1px solid;
+}
+
+/* line 202, ../sass/main.scss */
 .text-large {
   font-family: "freight-big-pro", serif;
   font-style: italic;
@@ -60,7 +232,7 @@ body {
   font-style: italic;
 }
 @media (min-width: 900px) {
-  /* line 45, ../sass/main.scss */
+  /* line 202, ../sass/main.scss */
   .text-large {
     font-size: 5vw;
   }

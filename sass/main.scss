@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: relative, times;
+    font-family: "chalet-london-sixty", sans-serif;
     font-size: 18px;
     line-height: 1.5em;
     background-color: white;
@@ -8,26 +8,117 @@ body {
     height: 100%;
 }
 
+.menu-item {
+    font-size: 1em;
+    text-decoration: none;
+    font-family: "chalet-london-sixty", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-color: black;
+}
+
+.menu-item:hover {
+    border-bottom: 1px solid #000;
+    color: black;
+}
+
+.menu-item:visited {
+    color: black;
+}
+
+
+.nav-line {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+}
+
 .navigation {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     justify-content: space-between;
     padding: 30px 30px 0 30px;
-    z-index: 1000;
 }
 
 .logo {
     align-content: flex-end;
 }
 
-.menu {
+.nav-items {
     display: flex;
     align-content: flex-start;
     flex-direction: row;
     text-align: right;
 }
 
+
+//menu toogle
+.background {
+    background: #D6825A;
+    height: 100%;
+    position: relative;
+    .trigger {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 30px;
+        right: auto;
+        bottom: auto;
+        left: 30px;
+        z-index: 3;
+        cursor: pointer;
+        transition: top .1s ease-in-out;
+    }
+
+    &.on {}
+}
+
+.menu {
+    background: rgba(255, 255, 255, 1);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 999;
+
+    ul {
+        list-style-type: none;
+        width: 800px;
+        text-align: left;
+        position: absolute;
+        top: 20%;
+        right: auto;
+        bottom: auto;
+        left: 10%;
+
+        li {
+            color: black;
+            font-size: 10vw;
+            padding: 40px 0;
+            @media (min-width: 900px) {
+                color: black;
+                font-size: 6vw;
+                padding: 40px 0;
+            }
+        }
+    }
+}
+
+.menu a:hover {
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+}
+
+//about section
 .about-row {
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -39,6 +130,72 @@ body {
     @media (min-width: 900px) {
         max-width: 60vw;
     }
+}
+
+
+//sign
+.header {
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    height: 100px;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-color: black;
+}
+
+.header p {
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 5vw;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+.word {
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    height: 60px;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    position: absolute;
+}
+
+ul li {
+    font-size: 5vw;
+}
+
+.content .box {
+    width: 100%;
+    height: 700px;
+}
+
+.box1 {
+    border: 1px solid;
+}
+
+.box2 {
+    border: 1px solid;
+}
+
+.box3 {
+    border: 1px solid;
+}
+
+.box4 {
+    border: 1px solid;
+}
+
+.box5 {
+    border: 1px solid;
+}
+
+.box6 {
+    border: 1px solid;
 }
 
 
