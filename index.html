@@ -12,6 +12,13 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/photoswipe.css"> -->
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/slick/slick.css" />
+    <!--<link rel="stylesheet" href="css/slick/slick-theme.css" />-->
     <style>
     @import url("https://use.typekit.net/mpq5cwm.css");
     </style>
@@ -25,16 +32,16 @@
     <div class="menu">
         <ul>
             <li>
-                <a>Menu item here!</a>
+                <a class="menu-item">work</a>
             </li>
             <li>
-                <a>Menu item here!</a>
+                <a class="menu-item">chalapeno</a>
             </li>
             <li>
-                <a>Menu item here!</a>
+                <a class="menu-item">enchiladas</a>
             </li>
             <li>
-                <a>Menu item here!</a>
+                <a class="menu-item">profile</a>
             </li>
         </ul>
     </div>
@@ -42,8 +49,8 @@
         <div class="navigation">
             <div class="logo">logo</div>
             <div class="nav-items">
-                <a href="#" class="trigger menu-item">menu </a>
-                <a href="#" class="close menu-item">close </a>
+                <a href="#" class="trigger menu-link">menu </a>
+                <a href="#" class="close menu-link">close </a>
             </div>
         </div>
         <div class="header">
@@ -65,19 +72,56 @@
                 <p>Your kit must be published any time you make a change, such as adding new fonts or updating the domain listing. You may also need to republish a kit to access new features, such as updated browser support. Publishing your kit is a good first step in resolving font loading problems. </p>
             </div>
         </div>
-        <div class="box box2">Two</div>
+        <div class="box box2">
+            <!--<div class="slick-wrap">
+                <div class="slick-image"><img data-lazy="images/fokume.png" />
+                    <div class="slick-discription">
+                        <p>fokume is the best</p>
+                    </div>
+                </div>
+                <div class="slick-image"><img data-lazy="images/fokume.png" />
+                    <div class="slick-discription">
+                        <p>fokume is the best maybe</p>
+                    </div>
+                </div>
+                <div class="slick-image"><img data-lazy="images/fokume.png" />
+                    <div class="slick-discription">
+                        <p>fokume is the best maybe not</p>
+                    </div>
+                </div>
+                <div class="slick-image"><img data-lazy="images/fokume.png" />
+                    <div class="slick-discription">
+                        <p>fokume is the best, who knows</p>
+                    </div>
+                </div>
+                <div class="slick-image"><img data-lazy="images/fokume.png" />
+                    <div class="slick-discription">
+                        <p>fokume is the best, he does</p>
+                    </div>
+                </div>
+                <div class="slick-image"><img data-lazy="images/fokume.png" />
+                    <div class="slick-discription">
+                        <p>fokume is the bestest</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
         <div class="box box3">Three</div>
         <div class="box box4">Four</div>
         <div class="box box5">Five</div>
         <div class="box box6">Six</div>
     </div>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/TweenMax.js"></script>
     <script src="js/ScrollMagic.js"></script>
     <!-- <script src="js/plugins/animation.gsap.js"></script> -->
     <script src="js/ScrollToPlugin.js"></script>
     <!--<script src="js/Draggable.js"></script>-->
-    <script src="js/slick.js"></script>
+    <!-- Core JS file -->
+    <!--<script src="js/photoswipe.min.js"></script>-->
+    <!-- UI JS file -->
+    <script src="js/photoswipe-ui-default.min.js"></script>
     <script src="js/main.js"></script>
     <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
